@@ -1,0 +1,19 @@
+<!-- <div class="slidecontainer">
+    <input [type]="type" [min]="minVal" [max]="maxVal" class="slider" [id]="id" [(ngModel)]="value" (click)="clickAction()">
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input Range with Dynamic Label</title>
+</head>
+<body>
+	<div class="range-wrap">
+		<!-- <div class="range-value" id="rangeV">
+            <span [style.position.left]="calculateRange()">{{value}}</span>
+        </div> -->
+        <input [type]="type" [min]="minVal" [max]="maxVal" class="slider" [id]="id" [(ngModel)]="value" (click)="clickAction()" step="1">
+		<span> {{value}}</span>
+	</div>
+</body>
+</html>
